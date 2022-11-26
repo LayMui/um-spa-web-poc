@@ -10,5 +10,5 @@ Business Need: Login to SPA (Single Page Application)
     Given James is at the SPA login
     When he select a country code and a valid mobile number
      | countryFlagName        | mobileNumber |
-     | 🇺🇸 +1 United States    | 38888888888   |
+     | 🇺🇸 +1 United States    | 3854754186  |
     Then he is able to perform OTP
