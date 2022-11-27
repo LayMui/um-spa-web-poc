@@ -17,7 +17,8 @@ Given(
   async (actor: Actor) =>
     await actor.attemptsTo(
       Navigate.to(process.env.BASE_URL),
-      Login.toSPA())
+     // Login.toSPA()
+     )
 )
 
 When(
@@ -38,3 +39,5 @@ Then('{pronoun} is able to perform OTP',
   await actor.attemptsTo(
   )
   })
+
+  

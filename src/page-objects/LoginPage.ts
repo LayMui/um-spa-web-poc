@@ -18,4 +18,9 @@ export const LoginPage = {
   countryCode: (countryName: string) =>
   PageElement.located(By.css('li[data-testid="country-list-`${countryName}`"]')),
 
+  dateInputField: () => 
+  PageElement.located(By.css('input[data-testid=myDate]')),
+
+  jobInputField: () => 
+  PageElement.located(By.id('job'))
 }
