@@ -25,9 +25,9 @@ When(
   async (actor: Actor, table: DataTable) => {
   const mobileNumber = table.hashes()[0].mobileNumber;
   const countryFlagName = table.hashes()[0].countryFlagName;
-  const OTPCode = await twilioAPI.readOTP(countryFlagName.split(' ')[1] + mobileNumber)
+ // const OTPCode = await twilioAPI.readOTP(countryFlagName.split(' ')[1] + mobileNumber)
     await actor.attemptsTo(
-      EnterCredentials.withCountryCodeAndMobileNumber(countryFlagName.split(/(\d) /).pop(), mobileNumber),
+     EnterCredentials.withCountryCodeAndMobileNumber(countryFlagName.split(/(\d) /).pop(), mobileNumber),
      // ConfirmWith.OTP(OTPCode),
       )
   

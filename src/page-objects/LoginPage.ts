@@ -16,6 +16,7 @@ export const LoginPage = {
   PageElement.located(By.css('button[data-testid=button]')),
    
   countryCode: (countryName: string) =>
-  PageElement.located(By.css('li[data-testid="country-list-`${countryName}`"]')),
+   PageElement.located(By.css('li[data-testid="country-list-`${countryName}`"]')),
+  
 
 }
