@@ -39,7 +39,7 @@ Go to Sample-01/src and update the content of auth_config.json
 ```
 {
   "domain": "dev-farmer-spain.eu.auth0.com",
-  "clientId": "laznQTgs8XlLDHZqirKsWNphixhYcVbq",
+  "clientId": "lxxxxxxx",
   "audience": "https://dev-farmer-spain.eu.auth0.com/api/v2/"
 }
 ```
@@ -54,3 +54,6 @@ npm run dev
 ```
 yarn test
 ```
+<img width="669" alt="Screenshot 2022-11-28 at 7 39 34 PM" src="https://user-images.githubusercontent.com/11436517/204268985-fd9c9503-5b40-4b96-8123-300edb0b57ad.png">
+
+
