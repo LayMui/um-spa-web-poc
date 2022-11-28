@@ -1,8 +1,9 @@
 
 import { Duration, Task, Wait } from '@serenity-js/core'
 import { Click, Enter, isVisible } from '@serenity-js/web'
-import { LoginPage } from '../page-objects/LoginPage'
+
 import { ListWhichText } from '../page-objects/ListWhichText'
+import { LoginPage } from '../page-objects/LoginPage'
 
     
 export const EnterCredentials = {
