@@ -15,14 +15,14 @@ export const EnterCredentials = {
                 isVisible()
             ),
             Click.on(LoginPage.countryCodeDropDown()),
-            Scroll.to(LoginPage.countryCode(countryName)),
+            Scroll.to(ByTestId(`country-list-'${countryName}'`)),
             Wait.upTo(Duration.ofMilliseconds(5000000)).until(
-                ByTestId('country-list-`${countryName}`'), 
+                ByTestId(`country-list-'${countryName}'`), 
                 //LoginPage.countryCode(countryName),
                 isVisible()
             ),
 
-            Click.on(ByTestId('country-list-`${countryName}`')),
+            Click.on(ByTestId(`country-list-'${countryName}'`)),
             //Click.on(LoginPage.countryCode(countryName))
    
         ),
