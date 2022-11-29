@@ -1,6 +1,6 @@
 import { equals } from '@serenity-js/assertions'
 import {  Duration, Task, Wait} from '@serenity-js/core'
-import { Click, isVisible, Scroll } from '@serenity-js/web'
+import { Click, Enter,isVisible, Scroll } from '@serenity-js/web'
 
 import { ListWhichText } from '../page-objects/ListWhichText'
 import { LoginPage } from '../page-objects/LoginPage'
@@ -15,14 +15,21 @@ export const EnterCredentials = {
                 isVisible()
             ),
             Click.on(LoginPage.countryCodeDropDown()),
-            Scroll.to(ByTestId(`country-list-'${countryName}'`)),
+            Scroll.to(LoginPage.countryCode(countryName, 40)),
             Wait.upTo(Duration.ofMilliseconds(5000000)).until(
-                ByTestId(`country-list-'${countryName}'`), 
-                //LoginPage.countryCode(countryName),
-                isVisible()
-            ),
+                LoginPage.countryCode(countryName, 40), isVisible()),
+            Click.on(LoginPage.countryCode(countryName, 40)),
+            Click.on(LoginPage.mobileNumberField()),
+            Enter.theValue(mobileNumber).into(LoginPage.mobileNumberField()),
+            
+            // Scroll.to(ByTestId(`country-list-'${countryName}'`)),
+            // Wait.upTo(Duration.ofMilliseconds(5000000)).until(
+            //     ByTestId(`country-list-'${countryName}'`), 
+            //     //LoginPage.countryCode(countryName),
+            //     isVisible()
+            // ),
 
-            Click.on(ByTestId(`country-list-'${countryName}'`)),
+            // Click.on(ByTestId(`country-list-'${countryName}'`)),
             //Click.on(LoginPage.countryCode(countryName))
    
         ),
