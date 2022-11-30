@@ -1,6 +1,7 @@
 
+import { equals } from '@serenity-js/assertions'
 import { Duration, Task, Wait } from '@serenity-js/core'
-import { Click, Enter, isEnabled,isVisible } from '@serenity-js/web'
+import { Click, Enter, isVisible } from '@serenity-js/web'
 
 import { ButtonWhichText } from '../page-objects/ButtonWhichText';
 import { OTPPage } from '../page-objects/OTPPage';
@@ -17,11 +18,11 @@ export const ConfirmWith = {
             Click.on(OTPPage.OTPInput()),
             Enter.theValue(OTPCode).into(OTPPage.OTPInput()),
      
-            Wait.upTo(Duration.ofMilliseconds(5000000)).until(
-                //Cannot find name 'equals'
-                ButtonWhichText(equals('Confirm')), 
-                isEnabled(),
-            ),
+            // Wait.upTo(Duration.ofMilliseconds(5000000)).until(
+            //     //Cannot find name 'equals'
+            //     ButtonWhichText(equals('Confirm')), 
+            //     isEnabled(),
+            // ),
             Click.on(ButtonWhichText(equals('Confirm')))
         ),
 

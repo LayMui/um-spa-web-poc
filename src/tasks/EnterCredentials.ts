@@ -21,7 +21,7 @@ export const EnterCredentials = {
             Click.on(LoginPage.countryCode(countryName, 40)),
             Click.on(LoginPage.mobileNumberField()),
             Enter.theValue(mobileNumber).into(LoginPage.mobileNumberField()),
-            
+            Click.on(LoginPage.ContinueButton())
             // Scroll.to(ByTestId(`country-list-'${countryName}'`)),
             // Wait.upTo(Duration.ofMilliseconds(5000000)).until(
             //     ByTestId(`country-list-'${countryName}'`), 
