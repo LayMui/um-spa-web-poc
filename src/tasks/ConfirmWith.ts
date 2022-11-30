@@ -17,13 +17,23 @@ export const ConfirmWith = {
             ),
             Click.on(OTPPage.OTPInput()),
             Enter.theValue(OTPCode).into(OTPPage.OTPInput()),
+
+            // eslint-disable-next-line @typescript-eslint/indent
+              Wait.upTo(Duration.ofMilliseconds(5000000)).until(
+                OTPPage.confirmButton(),
+                isVisible(),
+            ),
+            Click.on(OTPPage.confirmButton()),
      
             // Wait.upTo(Duration.ofMilliseconds(5000000)).until(
             //     //Cannot find name 'equals'
             //     ButtonWhichText(equals('Confirm')), 
             //     isEnabled(),
             // ),
-            Click.on(ButtonWhichText(equals('Confirm')))
-        ),
+            // Click.on(ButtonWhichText(equals('Confirm')))
+             
 
+        ),
+        
 }
+          

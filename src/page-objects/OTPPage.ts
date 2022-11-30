@@ -3,11 +3,11 @@ import { By, PageElement } from '@serenity-js/web'
 export const OTPPage = {
  
     OTPInput: () => 
-    // PageElement.located(By.xpath('//*[@id="root"]/div/div/section/main/form/section/input')),
-        PageElement.located(
-            By.css('input[data-testid=OTPInput]')
-        ),
-    // OTPInput: () => 
+        PageElement.located(By.xpath('//*[@id="root"]/div/div/section/main/form/section/input')),
+    //     PageElement.located(
+    //         By.css('input[data-testid=OTPInput]')
+    //     ),
+    // // OTPInput: () => 
     // Target.the('OTP input field').located(by.css('.input input--otp')),
 
 
