@@ -15,6 +15,12 @@
 </li>
 ```
  
+
+ ```
+<button class="btn btn--text-btn" data-testid="button">Resend</button>
+<button class="btn" data-testid="button">Confirm</button> 
+ ```
+
  
 ``` 
    ✗ ReferenceError: equals is not defined
