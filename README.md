@@ -39,7 +39,7 @@ Go to Sample-01/src and update the content of auth_config.json
 ```
 {
   "domain": "dev-farmer-spain.eu.auth0.com",
-  "clientId": "laznQTgs8XlLDHZqirKsWNphixhYcVbq",
+  "clientId": "lxxxx",
   "audience": "https://dev-farmer-spain.eu.auth0.com/api/v2/"
 }
 ```
