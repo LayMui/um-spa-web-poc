@@ -1,9 +1,7 @@
 
-import { equals } from '@serenity-js/assertions'
 import { Duration, Task, Wait } from '@serenity-js/core'
 import { Click, Enter, isVisible } from '@serenity-js/web'
 
-import { ButtonWhichText } from '../page-objects/ButtonWhichText';
 import { OTPPage } from '../page-objects/OTPPage';
 
 
